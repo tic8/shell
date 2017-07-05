@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $(id -u) != "0" ]; then
+    echo "Error: You must be root to run this script!"
+    exit 1
+fi
+
 hosts_file='/etc/hosts'
 local_end='###local_end###'
 tmp_file='/tmp/tmp_hosts'
