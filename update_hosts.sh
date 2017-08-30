@@ -22,7 +22,7 @@ if [ ! $line ]; then
 fi
 sed -n "1,${line}p" $hosts_file > $tmp_file
 echo "\n" >> $tmp_file
-curl https://raw.githubusercontent.com/racaljk/hosts/master/hosts 2>/dev/null >> $tmp_file
+curl https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts 2>/dev/null >> $tmp_file
 cat $tmp_file > $hosts_file
 rm -rf $tmp_file
 echo "End execute"
