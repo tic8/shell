@@ -1,2 +1,2 @@
 # shell
-oneself shell scripts
+Some commonly used scripts, configurations, code snippets!
